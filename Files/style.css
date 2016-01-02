@@ -1,0 +1,90 @@
+﻿html {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.01);
+}
+
+.resizeGrip {
+	background: lightblue;
+	border: 1px solid blue;
+	position: absolute;
+}
+
+body {
+	margin:0px;
+}
+
+#timeFrame 
+{
+	font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0.51;
+    margin:0px;
+    white-space: nowrap;
+}
+
+#content {
+	position: absolute;
+}
+
+#window {
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	border-left: 1px;
+	border-right: 1px;
+	background: rgba(0,0,0,0.01);
+	font-size: 12px;
+}
+
+#setupcontent {
+	margin:2px;
+	background-color: white;
+	font-family: sans-serif;
+}
+
+#fontSizeSlider {
+	width:250px;
+	display: inline-block;
+}
+
+#fontOpacity {
+	width:250px;
+	display: inline-block;
+}
+#fontOpacitySliderText {
+	margin-left: 10px;
+}
+#fontSizeSliderText {
+	margin-left: 10px;
+}
+
+#backgroundOpacity {
+	width:250px;
+	display: inline-block;
+}
+#backgroundOpacitySliderText {
+	margin-left: 10px;
+}
+
+#positionX {
+	width:250px;
+	display: inline-block;
+}
+#positionY {
+	width:250px;
+	display: inline-block;
+}
+
+#sliderDiv {
+	margin-top:10px;
+	margin-bottom: 10px;
+}

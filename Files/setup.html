@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/jquery-ui/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="setup.js"></script>
+		<title>tClock</title>
+	</head>
+
+	<body>
+	    
+		<div id="window">
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Font</a></li>
+					<li><a href="#tabs-2">Background</a></li>
+					<li><a href="#tabs-3">Position and Format</a></li>
+				</ul>
+				
+				<div id="tabs-1">
+					<h2>Font Family</h2>
+					<input id="fontFamily" />
+					<h2>Font Size:</h2>
+					<div id="sliderDiv">
+						<div id="fontSizeSlider"></div>
+						<span id="fontSizeSliderText"></span>
+					</div>
+					<div id="formatButtonSet">
+						<input type="checkbox" id="fontBold"><label for="fontBold">Bold</label>
+						<input type="checkbox" id="fontItalic"><label for="fontItalic">Italic</label>
+						<input type="checkbox" id="fontUnderline"><label for="fontUnderline">Underline</label>
+						<input type="checkbox" id="fontShadow"><label for="fontShadow">Shadow</label>
+					</div>
+					<h2>Font Color:</h2>
+					<input id="fontColor"></input>
+
+					<h2>Font Opacity:</h2>
+					<div id="sliderDiv">
+						<div id="fontOpacity"></div>
+						<span id="fontOpacitySliderText"></span>
+					</div>
+				</div>
+				<div id="tabs-2">
+
+					<h2>Background Color:</h2>
+					<input id="backgroundColor"></input>
+
+					<h2>Background Opacity:</h2>
+					<div id="sliderDiv">
+						<div id="backgroundOpacity"></div>
+						<span id="backgroundOpacitySliderText"></span>
+					</div>
+				</div>
+				<div id="tabs-3">
+					<h2>Position:</h2>
+					<label for="positionX">X:</label>
+					<input id="positionX"></input>
+					<br/>
+					<label for="positionY">Y:</label>
+					<input id="positionY"></input>
+
+					<h2>Format:</h2>
+					<input id="format"></input>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+{
+	"manifest_version":1,
+	"type":"WebApp",
+	"meta":{
+		"name":"tClock",
+		"version":"1.0.0",
+		"minimum-overwolf-version":"0.77.10",
+		"author":"Taldoras",
+		"icon":"IconMouseOver.png",
+		"icon_gray":"IconMouseNormal.png",
+		"description":"Clock Widget"
+	},
+	"permissions": ["Hotkeys", "GameInfo"],
+	"data": {
+		"start_window":"setup",
+		"windows":{
+			"clock":
+			{
+				"file":"Files/clock.html",
+				"transparent":true,
+				"resizable":false,
+				"clickthrough": true,
+				"in_game_only": true,
+				"disable_restore_animation": true
+			},
+			"setup":{
+				"file":"Files/setup.html",
+				"transparent": false,
+				"resizable": false,
+				"show_in_taskbar": true,
+				"disable_restore_animation": true,
+				"size": {
+					"width": 250,
+					"height": 250
+				},
+				"start_position": {
+					"top": 100,
+					"left": 100
+				}
+			},
+		},
+		"hotkeys" : {
+	        "showSettings": {
+	            "title": "Show settings",
+	            "action-type": "custom",
+	            "default": "Ctrl+Alt+C"
+	        }
+    	}
+  }
+}
